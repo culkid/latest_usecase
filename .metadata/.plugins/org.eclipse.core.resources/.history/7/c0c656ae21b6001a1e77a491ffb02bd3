@@ -1,0 +1,81 @@
+#%RAML 0.8
+title: z-1a
+/getone: 
+  description: fetches record of single person using phone number
+  get:  
+    queryParameters: 
+      phone:
+        required: true
+    responses: 
+      200: 
+        body: 
+          application/json: 
+            example:  | 
+              [
+                {
+                  "customerid":"1000",
+                  "name":"renu",
+                  "gender":"female",
+                  "phone":"12345",
+                  "email":"renu@gmail.com"
+                },
+                {
+                  "customerid":"1001",
+                  "name":"kittu",
+                  "gender":"male",
+                  "phone":"678910",
+                  "email":"kittu@gmail.com"
+                },
+                {
+                  "customerid":"1002",
+                  "name":"bunny",
+                  "gender":"male",
+                  "phone":"123",
+                  "email":"bunny@gmail.com"
+                },
+                {
+                  "customerid":"1003",
+                  "name":"mani",
+                  "gender":"male",
+                  "phone":"7856",
+                  "email":"mani@gmail.com"
+                }
+              ]   
+/getall: 
+  description: fetches records of all
+  get:  
+    responses: 
+      200: 
+        body: 
+          application/json: 
+            example:  | 
+              [
+                {
+                  "customerid":"1000",
+                  "name":"renu",
+                  "gender":"female",
+                  "phone":"12345",
+                  "email":"renu@gmail.com"
+                },
+                {
+                  "customerid":"1001",
+                  "name":"kittu",
+                  "gender":"male",
+                  "phone":"678910",
+                  "email":"kittu@gmail.com"
+                },
+                {
+                  "customerid":"1002",
+                  "name":"bunny",
+                  "gender":"male",
+                  "phone":"123",
+                  "email":"bunny@gmail.com"
+                },
+                {
+                  "customerid":"1003",
+                  "name":"mani",
+                  "gender":"male",
+                  "phone":"7856",
+                  "email":"mani@gmail.com"
+                }
+              ] 

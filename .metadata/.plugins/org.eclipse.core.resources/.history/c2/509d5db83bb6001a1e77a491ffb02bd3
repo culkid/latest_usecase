@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd">
+	<http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" basePath="combine" doc:name="HTTP Listener Configuration"/>
+	<http:request-config name="HTTP_Request_Configuration" host="localhost" port="8085" basePath="api" doc:name="HTTP Request Configuration"/>
+	<http:request-config name="HTTP_Request_Configuration1" host="localhost" port="8083" basePath="api" doc:name="HTTP Request Configuration"/>
+	<http:request-config name="HTTP_Request_Configuration2" host="localhost" port="8084" basePath="api" doc:name="HTTP Request Configuration"/>
+	<sub-flow name="social_section">
+		<http:request config-ref="HTTP_Request_Configuration2" path="socialall" method="POST" doc:name="HTTP"/>
+		<byte-array-to-object-transformer doc:name="Byte Array to Object"/>
+		<set-variable variableName="social_var" value="#[payload]" doc:name="social_var"/>
+		<logger message="social flow executed #[flowVars.social_var]" level="INFO" doc:name="Logger"/>
+	</sub-flow>
+	<sub-flow name="customer_section">
+		<http:request config-ref="HTTP_Request_Configuration1" path="custall" method="POST" doc:name="HTTP"/>
+		<byte-array-to-object-transformer doc:name="Byte Array to Object"/>
+		<set-variable variableName="customer_var" value="#[payload]" doc:name="customer_var"/>
+		<logger message="customer section executed............... #[flowVars.customer_var]" level="INFO" doc:name="Logger"/>
+		<flow-ref name="social_section" doc:name="Flow Reference"/>
+	</sub-flow>
+	<sub-flow name="personal_section">
+		<http:request config-ref="HTTP_Request_Configuration" path="getall" method="POST" doc:name="HTTP"/>
+		<byte-array-to-object-transformer doc:name="Byte Array to Object"/>
+		<set-variable variableName="personal_var" value="#[payload]" doc:name="personal_var"/>
+		<logger message="personal api executed.... #[flowVars.personal_var]" level="INFO" doc:name="Logger"/>
+		<flow-ref name="customer_section" doc:name="Flow Reference"/>
+	</sub-flow>
+	<flow name="main_flow">
+		<http:listener config-ref="HTTP_Listener_Configuration" path="/usecase" doc:name="HTTP"/>
+		<flow-ref name="personal_section" doc:name="Flow Reference"/>
+		<dw:transform-message doc:name="Transform Message" metadata:id="bb29bcbe-cd2d-4e76-8c88-1aa1bf2307c0">
+			<dw:input-variable mimeType="application/json" variableName="customer_var"/>
+			<dw:input-variable doc:sample="C:\Users\dell\Desktop\456\expected-personal-json.json" mimeType="application/json" variableName="personal_var"/>
+			<dw:input-variable mimeType="application/json" variableName="social_var"/>
+			<dw:input-variable mimeType="application/json" variableName="sample-json"/>
+			<dw:set-payload><![CDATA[%dw 1.0
+%function getaccount(phone)
+{
+	(flowVars.customer_var[?($.phone==phone)] default {})
+}
+%function getsocial(phone)
+{
+	(flowVars.social_var[?($.phone==phone)] default {})
+}
+
+%output application/json
+---
+flowVars.personal_var map (val,index) ->
+{
+	customerid:val.customerid,
+	name:val.name,
+	gender:val.gender,
+	phone:val.phone,
+	email:val.email,
+	account:getaccount(val.phone),
+	social:getsocial(val.phone)
+}]]></dw:set-payload>
+		</dw:transform-message>
+	</flow>
+</mule>

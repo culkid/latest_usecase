@@ -1,0 +1,25 @@
+{
+    "inputMessageMetadata": {
+        "flowVariables": {
+            "personal_var": {
+                "connectorName": "#_custom_mule_metadata_type_#",
+                "typeId": "actual_personal"
+            },
+            "social_var": {
+                "connectorName": "#_custom_mule_metadata_type_#",
+                "typeId": "actual_social"
+            },
+            "customer_var": {
+                "connectorName": "#_custom_mule_metadata_type_#",
+                "typeId": "actual_cust"
+            },
+            "sample-json-pers": {
+                "connectorName": "#_custom_mule_metadata_type_#",
+                "typeId": "sample-json-pers"
+            }
+        }
+    },
+    "outputMessageMetadata": {},
+    "id": "f967030d-b726-4879-97bc-3c27f60564ef",
+    "version": "5.2.0.0"
+}

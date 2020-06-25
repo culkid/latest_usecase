@@ -1,0 +1,73 @@
+#%RAML 0.8
+title: z-1a
+/socialone: 
+  description: fetches social details of single person using phone number
+  get:  
+    queryParameters: 
+      phone:
+        required: true
+    responses: 
+      200: 
+        body: 
+          application/json: 
+            example:  | 
+              [
+                {
+                  "phone":"12345",
+                  "email":"test@gmail.com",
+                  "pan":"1000",
+                  "aadhar":"123412341234"
+                },
+                {
+                  "phone":"678910",
+                  "email":"test1@gmail.com",
+                  "pan":"1025",
+                  "aadhar":"456745674567"
+                },
+                {
+                  "phone":"125",
+                  "email":"test2@gmail.com",
+                  "pan":"1013",
+                  "aadhar":"789478947894"
+                },
+                {
+                  "phone":"345",
+                  "email":"test3@gmail.com",
+                  "pan":"1545",
+                  "aadhar":"154515451545"
+                }
+              ]
+/socialall: 
+  description: fetches social records of all
+  post:  
+    responses: 
+      200: 
+        body: 
+          application/json: 
+            example:  | 
+              [
+                {
+                  "phone":"12345",
+                  "email":"test@gmail.com",
+                  "pan":"1000",
+                  "aadhar":"123412341234"
+                },
+                {
+                  "phone":"678910",
+                  "email":"test1@gmail.com",
+                  "pan":"1025",
+                  "aadhar":"456745674567"
+                },
+                {
+                  "phone":"125",
+                  "email":"test2@gmail.com",
+                  "pan":"1013",
+                  "aadhar":"789478947894"
+                },
+                {
+                  "phone":"345",
+                  "email":"test3@gmail.com",
+                  "pan":"1545",
+                  "aadhar":"154515451545"
+                }
+              ]

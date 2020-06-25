@@ -1,0 +1,74 @@
+#%RAML 0.8
+title: z-1b
+/cust: 
+  description: fetches record of single person using phone number
+  get:  
+    queryParameters: 
+      phone:
+        required: true
+    responses: 
+      200: 
+        body: 
+          application/json: 
+            example:  | 
+              [
+                {
+                  "phone":"12345",
+                  "account_number":"1000",
+                  "balance":"50000",
+                  "provider":"SBI Bank",
+                },
+                {
+                  "phone":"678910",
+                  "account_number":"1100",
+                  "balance":"60000",
+                  "provider":"Axis Bank",
+                },
+                {
+                  "phone":"1345",
+                  "account_number":"15000",
+                  "balance":"500510",
+                  "provider":"HDFC Bank",
+                },
+                {
+                  "phone":"195",
+                  "account_number":"156000",
+                  "balance":"500632",
+                  "provider":"Andhra Bank",
+                }
+              ]
+                
+/custall: 
+  description: fetches records of all customers
+  post:  
+    responses: 
+      200: 
+        body: 
+          application/json: 
+            example:  | 
+              [
+                {
+                  "phone":"12345",
+                  "account_number":"1000",
+                  "balance":"50000",
+                  "provider":"SBI Bank",
+                },
+                {
+                  "phone":"678910",
+                  "account_number":"1100",
+                  "balance":"60000",
+                  "provider":"Axis Bank",
+                },
+                {
+                  "phone":"1345",
+                  "account_number":"15000",
+                  "balance":"500510",
+                  "provider":"HDFC Bank",
+                },
+                {
+                  "phone":"195",
+                  "account_number":"156000",
+                  "balance":"500632",
+                  "provider":"Andhra Bank",
+                }
+              ]

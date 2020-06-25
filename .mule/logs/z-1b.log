@@ -1,0 +1,1379 @@
+2020-06-24 19:39:28,620 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'z-1b'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 19:39:28,899 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-06-24 19:39:29,062 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-06-24 19:39:29,248 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-06-24 19:39:29,248 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-06-24 19:39:29,518 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@64712be: startup date [Wed Jun 24 19:39:29 IST 2020]; root of context hierarchy
+2020-06-24 19:39:31,494 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-24 19:39:33,353 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2020-06-24 19:39:33,905 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx2.log
+2020-06-24 19:39:34,184 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx2.log
+2020-06-24 19:39:34,376 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-06-24 19:39:34,385 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-main
+2020-06-24 19:39:34,387 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2020-06-24 19:39:34,395 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2020-06-24 19:39:34,395 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2020-06-24 19:39:34,395 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2020-06-24 19:39:34,395 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2020-06-24 19:39:34,449 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-main.stage1
+2020-06-24 19:39:34,493 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-console
+2020-06-24 19:39:34,495 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@38ee7a9d
+2020-06-24 19:39:34,502 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-console.stage1
+2020-06-24 19:39:34,511 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/cust:z-1b-config
+2020-06-24 19:39:34,512 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@63f9b562
+2020-06-24 19:39:34,519 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/cust:z-1b-config.stage1
+2020-06-24 19:39:34,793 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: post:/custall:z-1b-config
+2020-06-24 19:39:34,793 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@69de5bed
+2020-06-24 19:39:34,799 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: post:/custall:z-1b-config.stage1
+2020-06-24 19:39:35,662 [main] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2020-06-24 19:39:35,763 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 19:39:35,765 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 19:39:35,781 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2020-06-24 19:39:35,788 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'z-1b'                                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 19:39:35,836 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-06-24 19:39:35,836 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-06-24 19:39:35,894 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2020-06-24 19:39:35,898 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-06-24 19:39:35,901 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-main
+2020-06-24 19:39:35,901 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-main.stage1
+2020-06-24 19:39:35,918 [main] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://127.0.0.1:8081/console                            *
+********************************************************************************
+2020-06-24 19:39:35,918 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-console
+2020-06-24 19:39:35,919 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-console.stage1
+2020-06-24 19:39:35,931 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/cust:z-1b-config
+2020-06-24 19:39:35,931 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/cust:z-1b-config.stage1
+2020-06-24 19:39:35,933 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: post:/custall:z-1b-config
+2020-06-24 19:39:35,933 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: post:/custall:z-1b-config.stage1
+2020-06-24 19:39:35,981 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-06-24 19:39:36,015 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: z-1b                                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-06-24 19:50:31,265 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'z-1b'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 19:50:31,282 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-06-24 19:50:31,290 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-06-24 19:50:31,307 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-06-24 19:50:31,307 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-06-24 19:50:31,310 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@45e140ae: startup date [Wed Jun 24 19:50:31 IST 2020]; root of context hierarchy
+2020-06-24 19:50:31,841 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-24 19:50:32,144 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx2.log
+2020-06-24 19:50:32,145 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx2.log
+2020-06-24 19:50:32,160 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-06-24 19:50:32,164 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-main
+2020-06-24 19:50:32,165 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2020-06-24 19:50:32,167 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2020-06-24 19:50:32,169 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2020-06-24 19:50:32,171 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2020-06-24 19:50:32,172 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2020-06-24 19:50:32,182 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-main.stage1
+2020-06-24 19:50:32,184 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-console
+2020-06-24 19:50:32,185 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1186374c
+2020-06-24 19:50:32,192 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-console.stage1
+2020-06-24 19:50:32,193 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/cust:z-1b-config
+2020-06-24 19:50:32,194 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@38d525aa
+2020-06-24 19:50:32,204 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/cust:z-1b-config.stage1
+2020-06-24 19:50:32,205 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: post:/custall:z-1b-config
+2020-06-24 19:50:32,205 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@8383a14
+2020-06-24 19:50:32,222 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: post:/custall:z-1b-config.stage1
+2020-06-24 19:50:32,361 [main] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2020-06-24 19:50:32,518 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 19:50:32,519 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 19:50:32,522 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'z-1b'                                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 19:50:32,532 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-06-24 19:50:32,532 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-06-24 19:50:32,585 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8083
+2020-06-24 19:50:32,607 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-06-24 19:50:32,609 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-main
+2020-06-24 19:50:32,609 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-main.stage1
+2020-06-24 19:50:32,663 [main] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://localhost:8083/console                            *
+********************************************************************************
+2020-06-24 19:50:32,664 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-console
+2020-06-24 19:50:32,664 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-console.stage1
+2020-06-24 19:50:32,691 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/cust:z-1b-config
+2020-06-24 19:50:32,691 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/cust:z-1b-config.stage1
+2020-06-24 19:50:32,703 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: post:/custall:z-1b-config
+2020-06-24 19:50:32,703 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: post:/custall:z-1b-config.stage1
+2020-06-24 19:50:32,861 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-06-24 19:50:33,008 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: z-1b                                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-06-24 19:51:29,867 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'z-1b'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 19:51:29,877 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-06-24 19:51:29,886 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-06-24 19:51:29,928 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-06-24 19:51:29,928 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-06-24 19:51:29,931 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@175581eb: startup date [Wed Jun 24 19:51:29 IST 2020]; root of context hierarchy
+2020-06-24 19:51:30,710 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-24 19:51:31,122 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx2.log
+2020-06-24 19:51:31,123 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx2.log
+2020-06-24 19:51:31,273 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-06-24 19:51:31,274 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-main
+2020-06-24 19:51:31,274 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2020-06-24 19:51:31,274 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2020-06-24 19:51:31,274 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2020-06-24 19:51:31,274 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2020-06-24 19:51:31,279 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2020-06-24 19:51:31,287 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-main.stage1
+2020-06-24 19:51:31,289 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-console
+2020-06-24 19:51:31,290 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@acb5508
+2020-06-24 19:51:31,298 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-console.stage1
+2020-06-24 19:51:31,299 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/cust:z-1b-config
+2020-06-24 19:51:31,299 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7cca31fc
+2020-06-24 19:51:31,305 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/cust:z-1b-config.stage1
+2020-06-24 19:51:31,305 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: post:/custall:z-1b-config
+2020-06-24 19:51:31,305 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5df92089
+2020-06-24 19:51:31,314 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: post:/custall:z-1b-config.stage1
+2020-06-24 19:51:31,366 [main] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2020-06-24 19:51:31,396 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 19:51:31,396 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 19:51:31,398 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'z-1b'                                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 19:51:31,405 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-06-24 19:51:31,406 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-06-24 19:51:31,428 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8083
+2020-06-24 19:51:31,434 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-06-24 19:51:31,435 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-main
+2020-06-24 19:51:31,435 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-main.stage1
+2020-06-24 19:51:31,453 [main] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://localhost:8083/console                            *
+********************************************************************************
+2020-06-24 19:51:31,453 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-console
+2020-06-24 19:51:31,453 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-console.stage1
+2020-06-24 19:51:31,460 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/cust:z-1b-config
+2020-06-24 19:51:31,460 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/cust:z-1b-config.stage1
+2020-06-24 19:51:31,462 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: post:/custall:z-1b-config
+2020-06-24 19:51:31,462 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: post:/custall:z-1b-config.stage1
+2020-06-24 19:51:31,480 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-06-24 19:51:31,489 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: z-1b                                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-06-24 20:39:19,957 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'z-1b'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 20:39:19,968 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-06-24 20:39:19,979 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-06-24 20:39:20,090 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-06-24 20:39:20,091 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-06-24 20:39:20,095 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@175581eb: startup date [Wed Jun 24 20:39:20 IST 2020]; root of context hierarchy
+2020-06-24 20:39:20,997 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-24 20:39:21,413 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx2.log
+2020-06-24 20:39:21,414 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx2.log
+2020-06-24 20:39:21,440 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-06-24 20:39:21,442 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-main
+2020-06-24 20:39:21,442 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2020-06-24 20:39:21,442 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2020-06-24 20:39:21,442 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2020-06-24 20:39:21,442 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2020-06-24 20:39:21,442 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2020-06-24 20:39:21,449 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-main.stage1
+2020-06-24 20:39:21,450 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-console
+2020-06-24 20:39:21,450 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@acb5508
+2020-06-24 20:39:21,459 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-console.stage1
+2020-06-24 20:39:21,460 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/cust:z-1b-config
+2020-06-24 20:39:21,460 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7cca31fc
+2020-06-24 20:39:21,467 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/cust:z-1b-config.stage1
+2020-06-24 20:39:21,468 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: post:/custall:z-1b-config
+2020-06-24 20:39:21,468 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5df92089
+2020-06-24 20:39:21,500 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: post:/custall:z-1b-config.stage1
+2020-06-24 20:39:21,577 [main] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2020-06-24 20:39:21,607 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 20:39:21,607 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 20:39:21,609 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'z-1b'                                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 20:39:21,619 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-06-24 20:39:21,619 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-06-24 20:39:21,632 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8083
+2020-06-24 20:39:21,636 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-06-24 20:39:21,637 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-main
+2020-06-24 20:39:21,637 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-main.stage1
+2020-06-24 20:39:21,642 [main] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://localhost:8083/console                            *
+********************************************************************************
+2020-06-24 20:39:21,642 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-console
+2020-06-24 20:39:21,642 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-console.stage1
+2020-06-24 20:39:21,647 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/cust:z-1b-config
+2020-06-24 20:39:21,647 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/cust:z-1b-config.stage1
+2020-06-24 20:39:21,653 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: post:/custall:z-1b-config
+2020-06-24 20:39:21,653 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: post:/custall:z-1b-config.stage1
+2020-06-24 20:39:21,665 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-06-24 20:39:21,678 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: z-1b                                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-06-24 20:44:52,308 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'z-1b'                                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 20:44:52,308 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: z-1b-main
+2020-06-24 20:44:52,309 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: z-1b-main.stage1
+2020-06-24 20:44:52,406 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: z-1b-console
+2020-06-24 20:44:52,406 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: z-1b-console.stage1
+2020-06-24 20:44:52,606 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: get:/cust:z-1b-config
+2020-06-24 20:44:52,606 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: get:/cust:z-1b-config.stage1
+2020-06-24 20:44:52,806 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: post:/custall:z-1b-config
+2020-06-24 20:44:52,807 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: post:/custall:z-1b-config.stage1
+2020-06-24 20:44:53,010 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-06-24 20:44:53,030 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://localhost:8083
+2020-06-24 20:44:53,037 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-06-24 20:44:53,037 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-06-24 20:44:53,043 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'z-1b'                                     +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 20:44:53,043 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-06-24 20:44:53,044 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: z-1b-main
+2020-06-24 20:44:53,044 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: z-1b-main.stage1
+2020-06-24 20:44:53,046 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: z-1b-console
+2020-06-24 20:44:53,046 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: z-1b-console.stage1
+2020-06-24 20:44:53,049 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: get:/cust:z-1b-config
+2020-06-24 20:44:53,049 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: get:/cust:z-1b-config.stage1
+2020-06-24 20:44:53,051 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: post:/custall:z-1b-config
+2020-06-24 20:44:53,052 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: post:/custall:z-1b-config.stage1
+2020-06-24 20:44:53,054 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-06-24 20:44:53,093 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@175581eb: startup date [Wed Jun 24 20:39:20 IST 2020]; root of context hierarchy
+2020-06-24 20:44:53,096 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "z-1b" shut down normally on: 24/6/20 8:44 PM          *
+* Up for: 0 days, 0 hours, 5 mins, 31.487 sec                        *
+**********************************************************************
+2020-06-24 20:44:53,233 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'z-1b'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 20:44:53,239 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-06-24 20:44:53,244 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-06-24 20:44:53,279 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-06-24 20:44:53,279 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-06-24 20:44:53,282 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@1e799e57: startup date [Wed Jun 24 20:44:53 IST 2020]; root of context hierarchy
+2020-06-24 20:44:53,533 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-24 20:44:53,654 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx2.log
+2020-06-24 20:44:53,655 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx2.log
+2020-06-24 20:44:53,663 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-06-24 20:44:53,664 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-main
+2020-06-24 20:44:53,664 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2020-06-24 20:44:53,664 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2020-06-24 20:44:53,664 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2020-06-24 20:44:53,664 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2020-06-24 20:44:53,664 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2020-06-24 20:44:53,669 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-main.stage1
+2020-06-24 20:44:53,672 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-console
+2020-06-24 20:44:53,672 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@69ce3bac
+2020-06-24 20:44:53,676 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-console.stage1
+2020-06-24 20:44:53,677 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/cust:z-1b-config
+2020-06-24 20:44:53,677 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@94cb570
+2020-06-24 20:44:53,681 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/cust:z-1b-config.stage1
+2020-06-24 20:44:53,681 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: post:/custall:z-1b-config
+2020-06-24 20:44:53,682 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@212c7ab
+2020-06-24 20:44:53,686 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: post:/custall:z-1b-config.stage1
+2020-06-24 20:44:53,753 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2020-06-24 20:44:53,775 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 20:44:53,776 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 20:44:53,777 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'z-1b'                                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 20:44:53,785 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-06-24 20:44:53,785 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-06-24 20:44:53,794 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8083
+2020-06-24 20:44:53,797 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-06-24 20:44:53,798 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-main
+2020-06-24 20:44:53,798 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-main.stage1
+2020-06-24 20:44:53,803 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://localhost:8083/console                            *
+********************************************************************************
+2020-06-24 20:44:53,803 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-console
+2020-06-24 20:44:53,803 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-console.stage1
+2020-06-24 20:44:53,808 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/cust:z-1b-config
+2020-06-24 20:44:53,810 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/cust:z-1b-config.stage1
+2020-06-24 20:44:53,812 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: post:/custall:z-1b-config
+2020-06-24 20:44:53,812 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: post:/custall:z-1b-config.stage1
+2020-06-24 20:44:53,821 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-06-24 20:44:53,823 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: z-1b                                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-06-24 20:45:36,997 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'z-1b'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 20:45:37,046 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-06-24 20:45:37,056 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-06-24 20:45:37,128 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-06-24 20:45:37,128 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-06-24 20:45:37,132 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@2baf72d5: startup date [Wed Jun 24 20:45:37 IST 2020]; root of context hierarchy
+2020-06-24 20:45:37,839 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-24 20:45:38,128 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx2.log
+2020-06-24 20:45:38,130 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx2.log
+2020-06-24 20:45:38,143 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-06-24 20:45:38,144 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-main
+2020-06-24 20:45:38,144 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2020-06-24 20:45:38,145 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2020-06-24 20:45:38,145 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2020-06-24 20:45:38,145 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2020-06-24 20:45:38,145 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2020-06-24 20:45:38,152 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-main.stage1
+2020-06-24 20:45:38,155 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-console
+2020-06-24 20:45:38,156 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3ac0a14b
+2020-06-24 20:45:38,162 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-console.stage1
+2020-06-24 20:45:38,163 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/cust:z-1b-config
+2020-06-24 20:45:38,163 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@29090809
+2020-06-24 20:45:38,170 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/cust:z-1b-config.stage1
+2020-06-24 20:45:38,171 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: post:/custall:z-1b-config
+2020-06-24 20:45:38,171 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@45571cfc
+2020-06-24 20:45:38,178 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: post:/custall:z-1b-config.stage1
+2020-06-24 20:45:38,265 [main] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2020-06-24 20:45:38,305 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 20:45:38,305 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 20:45:38,308 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'z-1b'                                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 20:45:38,313 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-06-24 20:45:38,315 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-06-24 20:45:38,342 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8083
+2020-06-24 20:45:38,352 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-06-24 20:45:38,354 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-main
+2020-06-24 20:45:38,354 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-main.stage1
+2020-06-24 20:45:38,371 [main] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://localhost:8083/console                            *
+********************************************************************************
+2020-06-24 20:45:38,371 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-console
+2020-06-24 20:45:38,371 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-console.stage1
+2020-06-24 20:45:38,379 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/cust:z-1b-config
+2020-06-24 20:45:38,379 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/cust:z-1b-config.stage1
+2020-06-24 20:45:38,382 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: post:/custall:z-1b-config
+2020-06-24 20:45:38,382 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: post:/custall:z-1b-config.stage1
+2020-06-24 20:45:38,397 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-06-24 20:45:38,402 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: z-1b                                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-06-24 21:41:20,801 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'z-1b'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 21:41:20,811 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-06-24 21:41:20,817 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-06-24 21:41:20,845 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-06-24 21:41:20,845 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-06-24 21:41:20,849 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@2baf72d5: startup date [Wed Jun 24 21:41:20 IST 2020]; root of context hierarchy
+2020-06-24 21:41:21,599 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-24 21:41:21,954 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx2.log
+2020-06-24 21:41:21,955 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx2.log
+2020-06-24 21:41:21,967 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-06-24 21:41:21,968 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-main
+2020-06-24 21:41:21,969 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2020-06-24 21:41:21,969 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2020-06-24 21:41:21,969 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2020-06-24 21:41:21,970 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2020-06-24 21:41:21,970 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2020-06-24 21:41:21,976 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-main.stage1
+2020-06-24 21:41:21,977 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-console
+2020-06-24 21:41:21,977 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3ac0a14b
+2020-06-24 21:41:21,984 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-console.stage1
+2020-06-24 21:41:21,985 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/cust:z-1b-config
+2020-06-24 21:41:21,985 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@29090809
+2020-06-24 21:41:21,991 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/cust:z-1b-config.stage1
+2020-06-24 21:41:21,992 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: post:/custall:z-1b-config
+2020-06-24 21:41:21,992 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@45571cfc
+2020-06-24 21:41:22,011 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: post:/custall:z-1b-config.stage1
+2020-06-24 21:41:22,049 [main] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2020-06-24 21:41:22,077 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 21:41:22,077 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 21:41:22,078 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'z-1b'                                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 21:41:22,084 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-06-24 21:41:22,084 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-06-24 21:41:22,097 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8083
+2020-06-24 21:41:22,100 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-06-24 21:41:22,102 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-main
+2020-06-24 21:41:22,102 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-main.stage1
+2020-06-24 21:41:22,109 [main] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://localhost:8083/console                            *
+********************************************************************************
+2020-06-24 21:41:22,110 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-console
+2020-06-24 21:41:22,110 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-console.stage1
+2020-06-24 21:41:22,117 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/cust:z-1b-config
+2020-06-24 21:41:22,117 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/cust:z-1b-config.stage1
+2020-06-24 21:41:22,121 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: post:/custall:z-1b-config
+2020-06-24 21:41:22,121 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: post:/custall:z-1b-config.stage1
+2020-06-24 21:41:22,141 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-06-24 21:41:22,159 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: z-1b                                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-06-24 22:03:21,394 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'z-1b'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 22:03:21,403 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-06-24 22:03:21,412 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-06-24 22:03:21,438 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-06-24 22:03:21,438 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-06-24 22:03:21,441 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@4cc89246: startup date [Wed Jun 24 22:03:21 IST 2020]; root of context hierarchy
+2020-06-24 22:03:22,181 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-24 22:03:22,514 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx2.log
+2020-06-24 22:03:22,515 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx2.log
+2020-06-24 22:03:22,532 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-06-24 22:03:22,535 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-main
+2020-06-24 22:03:22,535 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2020-06-24 22:03:22,535 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2020-06-24 22:03:22,535 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2020-06-24 22:03:22,535 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2020-06-24 22:03:22,535 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2020-06-24 22:03:22,544 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-main.stage1
+2020-06-24 22:03:22,545 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-console
+2020-06-24 22:03:22,545 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6c13019c
+2020-06-24 22:03:22,557 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-console.stage1
+2020-06-24 22:03:22,560 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/cust:z-1b-config
+2020-06-24 22:03:22,561 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3bc6c10f
+2020-06-24 22:03:22,570 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/cust:z-1b-config.stage1
+2020-06-24 22:03:22,570 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: post:/custall:z-1b-config
+2020-06-24 22:03:22,571 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@511d568f
+2020-06-24 22:03:22,583 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: post:/custall:z-1b-config.stage1
+2020-06-24 22:03:22,675 [main] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2020-06-24 22:03:22,720 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 22:03:22,720 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 22:03:22,723 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'z-1b'                                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 22:03:22,734 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-06-24 22:03:22,734 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-06-24 22:03:22,750 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8083
+2020-06-24 22:03:22,755 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-06-24 22:03:22,757 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-main
+2020-06-24 22:03:22,757 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-main.stage1
+2020-06-24 22:03:22,766 [main] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://localhost:8083/console                            *
+********************************************************************************
+2020-06-24 22:03:22,766 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-console
+2020-06-24 22:03:22,766 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-console.stage1
+2020-06-24 22:03:22,777 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/cust:z-1b-config
+2020-06-24 22:03:22,777 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/cust:z-1b-config.stage1
+2020-06-24 22:03:22,781 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: post:/custall:z-1b-config
+2020-06-24 22:03:22,781 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: post:/custall:z-1b-config.stage1
+2020-06-24 22:03:22,862 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-06-24 22:03:22,871 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: z-1b                                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-06-24 22:04:43,176 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'z-1b'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 22:04:43,187 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-06-24 22:04:43,196 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-06-24 22:04:43,223 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-06-24 22:04:43,225 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-06-24 22:04:43,234 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@24e1e90a: startup date [Wed Jun 24 22:04:43 IST 2020]; root of context hierarchy
+2020-06-24 22:04:43,766 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-24 22:04:44,023 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx2.log
+2020-06-24 22:04:44,052 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx2.log
+2020-06-24 22:04:44,070 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-06-24 22:04:44,074 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-main
+2020-06-24 22:04:44,074 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2020-06-24 22:04:44,074 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2020-06-24 22:04:44,074 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2020-06-24 22:04:44,075 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2020-06-24 22:04:44,075 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2020-06-24 22:04:44,084 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-main.stage1
+2020-06-24 22:04:44,089 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-console
+2020-06-24 22:04:44,089 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1e32037d
+2020-06-24 22:04:44,095 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-console.stage1
+2020-06-24 22:04:44,096 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/cust:z-1b-config
+2020-06-24 22:04:44,096 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@77cf329d
+2020-06-24 22:04:44,102 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/cust:z-1b-config.stage1
+2020-06-24 22:04:44,103 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: post:/custall:z-1b-config
+2020-06-24 22:04:44,103 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@43df1377
+2020-06-24 22:04:44,114 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: post:/custall:z-1b-config.stage1
+2020-06-24 22:04:44,165 [main] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2020-06-24 22:04:44,193 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 22:04:44,194 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 22:04:44,196 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'z-1b'                                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 22:04:44,203 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-06-24 22:04:44,204 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-06-24 22:04:44,270 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8083
+2020-06-24 22:04:44,277 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-06-24 22:04:44,280 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-main
+2020-06-24 22:04:44,288 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-main.stage1
+2020-06-24 22:04:44,301 [main] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://localhost:8083/console                            *
+********************************************************************************
+2020-06-24 22:04:44,301 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-console
+2020-06-24 22:04:44,301 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-console.stage1
+2020-06-24 22:04:44,319 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/cust:z-1b-config
+2020-06-24 22:04:44,319 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/cust:z-1b-config.stage1
+2020-06-24 22:04:44,323 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: post:/custall:z-1b-config
+2020-06-24 22:04:44,324 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: post:/custall:z-1b-config.stage1
+2020-06-24 22:04:44,342 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-06-24 22:04:44,353 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: z-1b                                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-06-24 22:09:39,022 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'z-1b'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 22:09:39,036 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-06-24 22:09:39,051 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-06-24 22:09:39,093 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-06-24 22:09:39,093 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-06-24 22:09:39,105 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@686e7513: startup date [Wed Jun 24 22:09:39 IST 2020]; root of context hierarchy
+2020-06-24 22:09:39,676 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-24 22:09:39,995 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx2.log
+2020-06-24 22:09:39,996 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx2.log
+2020-06-24 22:09:40,036 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-06-24 22:09:40,038 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-main
+2020-06-24 22:09:40,038 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2020-06-24 22:09:40,038 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2020-06-24 22:09:40,038 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2020-06-24 22:09:40,038 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2020-06-24 22:09:40,038 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2020-06-24 22:09:40,074 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-main.stage1
+2020-06-24 22:09:40,076 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-console
+2020-06-24 22:09:40,076 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@13a9cdae
+2020-06-24 22:09:40,091 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-console.stage1
+2020-06-24 22:09:40,091 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/cust:z-1b-config
+2020-06-24 22:09:40,091 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2d8087da
+2020-06-24 22:09:40,103 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/cust:z-1b-config.stage1
+2020-06-24 22:09:40,104 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: post:/custall:z-1b-config
+2020-06-24 22:09:40,105 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@430106cf
+2020-06-24 22:09:40,117 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: post:/custall:z-1b-config.stage1
+2020-06-24 22:09:40,219 [main] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2020-06-24 22:09:40,279 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 22:09:40,279 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 22:09:40,281 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'z-1b'                                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 22:09:40,301 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-06-24 22:09:40,301 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-06-24 22:09:40,318 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8083
+2020-06-24 22:09:40,324 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-06-24 22:09:40,325 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-main
+2020-06-24 22:09:40,325 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-main.stage1
+2020-06-24 22:09:40,333 [main] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://localhost:8083/console                            *
+********************************************************************************
+2020-06-24 22:09:40,333 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-console
+2020-06-24 22:09:40,333 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-console.stage1
+2020-06-24 22:09:40,353 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/cust:z-1b-config
+2020-06-24 22:09:40,353 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/cust:z-1b-config.stage1
+2020-06-24 22:09:40,356 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: post:/custall:z-1b-config
+2020-06-24 22:09:40,356 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: post:/custall:z-1b-config.stage1
+2020-06-24 22:09:40,386 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-06-24 22:09:40,393 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: z-1b                                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-06-24 22:14:17,395 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'z-1b'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 22:14:17,422 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-06-24 22:14:17,438 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-06-24 22:14:17,501 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-06-24 22:14:17,501 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-06-24 22:14:17,516 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@476c137b: startup date [Wed Jun 24 22:14:17 IST 2020]; root of context hierarchy
+2020-06-24 22:14:18,757 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-24 22:14:19,363 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx2.log
+2020-06-24 22:14:19,365 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx2.log
+2020-06-24 22:14:19,387 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-06-24 22:14:19,389 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-main
+2020-06-24 22:14:19,389 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2020-06-24 22:14:19,389 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2020-06-24 22:14:19,389 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2020-06-24 22:14:19,389 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2020-06-24 22:14:19,389 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2020-06-24 22:14:19,418 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-main.stage1
+2020-06-24 22:14:19,418 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-console
+2020-06-24 22:14:19,419 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@22bfd4b
+2020-06-24 22:14:19,427 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-console.stage1
+2020-06-24 22:14:19,428 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/cust:z-1b-config
+2020-06-24 22:14:19,428 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@fe13916
+2020-06-24 22:14:19,435 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/cust:z-1b-config.stage1
+2020-06-24 22:14:19,436 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: post:/custall:z-1b-config
+2020-06-24 22:14:19,436 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@69ac5752
+2020-06-24 22:14:19,443 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: post:/custall:z-1b-config.stage1
+2020-06-24 22:14:19,614 [main] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2020-06-24 22:14:19,654 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 22:14:19,654 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 22:14:19,656 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'z-1b'                                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 22:14:19,675 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-06-24 22:14:19,676 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-06-24 22:14:19,692 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8083
+2020-06-24 22:14:19,697 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-06-24 22:14:19,699 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-main
+2020-06-24 22:14:19,699 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-main.stage1
+2020-06-24 22:14:19,707 [main] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://localhost:8083/console                            *
+********************************************************************************
+2020-06-24 22:14:19,707 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-console
+2020-06-24 22:14:19,707 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-console.stage1
+2020-06-24 22:14:19,721 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/cust:z-1b-config
+2020-06-24 22:14:19,722 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/cust:z-1b-config.stage1
+2020-06-24 22:14:19,726 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: post:/custall:z-1b-config
+2020-06-24 22:14:19,727 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: post:/custall:z-1b-config.stage1
+2020-06-24 22:14:19,779 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-06-24 22:14:19,784 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: z-1b                                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-06-24 22:17:09,848 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'z-1b'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 22:17:09,863 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-06-24 22:17:09,876 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-06-24 22:17:09,900 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-06-24 22:17:09,900 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-06-24 22:17:09,910 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@78fb72cb: startup date [Wed Jun 24 22:17:09 IST 2020]; root of context hierarchy
+2020-06-24 22:17:10,380 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-24 22:17:10,940 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx2.log
+2020-06-24 22:17:10,945 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx2.log
+2020-06-24 22:17:11,017 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-06-24 22:17:11,024 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-main
+2020-06-24 22:17:11,025 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2020-06-24 22:17:11,027 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2020-06-24 22:17:11,027 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2020-06-24 22:17:11,030 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2020-06-24 22:17:11,030 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2020-06-24 22:17:11,085 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-main.stage1
+2020-06-24 22:17:11,087 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-console
+2020-06-24 22:17:11,089 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@25e796fe
+2020-06-24 22:17:11,096 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-console.stage1
+2020-06-24 22:17:11,096 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/cust:z-1b-config
+2020-06-24 22:17:11,096 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@40b01718
+2020-06-24 22:17:11,120 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/cust:z-1b-config.stage1
+2020-06-24 22:17:11,121 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: post:/custall:z-1b-config
+2020-06-24 22:17:11,121 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@665ed71a
+2020-06-24 22:17:11,135 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: post:/custall:z-1b-config.stage1
+2020-06-24 22:17:11,199 [main] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2020-06-24 22:17:11,231 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 22:17:11,232 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 22:17:11,235 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'z-1b'                                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 22:17:11,240 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-06-24 22:17:11,240 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-06-24 22:17:11,259 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8083
+2020-06-24 22:17:11,265 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-06-24 22:17:11,267 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-main
+2020-06-24 22:17:11,267 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-main.stage1
+2020-06-24 22:17:11,277 [main] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://localhost:8083/console                            *
+********************************************************************************
+2020-06-24 22:17:11,277 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-console
+2020-06-24 22:17:11,277 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-console.stage1
+2020-06-24 22:17:11,312 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/cust:z-1b-config
+2020-06-24 22:17:11,312 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/cust:z-1b-config.stage1
+2020-06-24 22:17:11,315 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: post:/custall:z-1b-config
+2020-06-24 22:17:11,315 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: post:/custall:z-1b-config.stage1
+2020-06-24 22:17:11,342 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-06-24 22:17:11,361 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: z-1b                                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-06-24 22:25:12,656 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'z-1b'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 22:25:12,667 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-06-24 22:25:12,689 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-06-24 22:25:12,734 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-06-24 22:25:12,734 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-06-24 22:25:12,747 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@175581eb: startup date [Wed Jun 24 22:25:12 IST 2020]; root of context hierarchy
+2020-06-24 22:25:13,396 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-24 22:25:13,748 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx2.log
+2020-06-24 22:25:13,750 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx2.log
+2020-06-24 22:25:13,774 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-06-24 22:25:13,776 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-main
+2020-06-24 22:25:13,776 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2020-06-24 22:25:13,776 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2020-06-24 22:25:13,776 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2020-06-24 22:25:13,777 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2020-06-24 22:25:13,777 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2020-06-24 22:25:13,787 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-main.stage1
+2020-06-24 22:25:13,790 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-console
+2020-06-24 22:25:13,790 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@acb5508
+2020-06-24 22:25:13,797 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-console.stage1
+2020-06-24 22:25:13,798 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/cust:z-1b-config
+2020-06-24 22:25:13,799 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7cca31fc
+2020-06-24 22:25:13,810 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/cust:z-1b-config.stage1
+2020-06-24 22:25:13,811 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: post:/custall:z-1b-config
+2020-06-24 22:25:13,811 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5df92089
+2020-06-24 22:25:13,818 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: post:/custall:z-1b-config.stage1
+2020-06-24 22:25:13,863 [main] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2020-06-24 22:25:14,003 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 22:25:14,003 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 22:25:14,011 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'z-1b'                                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 22:25:14,015 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-06-24 22:25:14,015 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-06-24 22:25:14,033 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8083
+2020-06-24 22:25:14,046 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-06-24 22:25:14,047 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-main
+2020-06-24 22:25:14,047 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-main.stage1
+2020-06-24 22:25:14,076 [main] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://localhost:8083/console                            *
+********************************************************************************
+2020-06-24 22:25:14,077 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-console
+2020-06-24 22:25:14,077 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-console.stage1
+2020-06-24 22:25:14,090 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/cust:z-1b-config
+2020-06-24 22:25:14,090 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/cust:z-1b-config.stage1
+2020-06-24 22:25:14,099 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: post:/custall:z-1b-config
+2020-06-24 22:25:14,099 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: post:/custall:z-1b-config.stage1
+2020-06-24 22:25:14,117 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-06-24 22:25:14,133 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: z-1b                                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-06-24 22:27:16,817 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'z-1b'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 22:27:16,828 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-06-24 22:27:16,835 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-06-24 22:27:16,868 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-06-24 22:27:16,869 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-06-24 22:27:16,876 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@2baf72d5: startup date [Wed Jun 24 22:27:16 IST 2020]; root of context hierarchy
+2020-06-24 22:27:17,564 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-24 22:27:17,931 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx2.log
+2020-06-24 22:27:17,934 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx2.log
+2020-06-24 22:27:17,947 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-06-24 22:27:17,950 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-main
+2020-06-24 22:27:17,950 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2020-06-24 22:27:17,950 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2020-06-24 22:27:17,951 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2020-06-24 22:27:17,951 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2020-06-24 22:27:17,952 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2020-06-24 22:27:17,964 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-main.stage1
+2020-06-24 22:27:17,964 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-console
+2020-06-24 22:27:17,965 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3ac0a14b
+2020-06-24 22:27:17,977 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-console.stage1
+2020-06-24 22:27:17,979 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/cust:z-1b-config
+2020-06-24 22:27:17,979 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@29090809
+2020-06-24 22:27:17,985 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/cust:z-1b-config.stage1
+2020-06-24 22:27:17,987 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: post:/custall:z-1b-config
+2020-06-24 22:27:17,988 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@45571cfc
+2020-06-24 22:27:17,999 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: post:/custall:z-1b-config.stage1
+2020-06-24 22:27:18,064 [main] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2020-06-24 22:27:18,091 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 22:27:18,093 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 22:27:18,095 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'z-1b'                                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 22:27:18,127 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-06-24 22:27:18,127 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-06-24 22:27:18,142 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8083
+2020-06-24 22:27:18,146 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-06-24 22:27:18,148 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-main
+2020-06-24 22:27:18,148 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-main.stage1
+2020-06-24 22:27:18,157 [main] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://localhost:8083/console                            *
+********************************************************************************
+2020-06-24 22:27:18,157 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-console
+2020-06-24 22:27:18,157 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-console.stage1
+2020-06-24 22:27:18,167 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/cust:z-1b-config
+2020-06-24 22:27:18,167 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/cust:z-1b-config.stage1
+2020-06-24 22:27:18,171 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: post:/custall:z-1b-config
+2020-06-24 22:27:18,172 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: post:/custall:z-1b-config.stage1
+2020-06-24 22:27:18,181 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-06-24 22:27:18,192 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: z-1b                                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-06-24 22:32:41,001 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'z-1b'                                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 22:32:41,058 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: z-1b-main
+2020-06-24 22:32:41,070 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: z-1b-main.stage1
+2020-06-24 22:32:41,213 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: z-1b-console
+2020-06-24 22:32:41,214 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: z-1b-console.stage1
+2020-06-24 22:32:41,412 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: get:/cust:z-1b-config
+2020-06-24 22:32:41,412 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: get:/cust:z-1b-config.stage1
+2020-06-24 22:32:41,615 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: post:/custall:z-1b-config
+2020-06-24 22:32:41,615 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: post:/custall:z-1b-config.stage1
+2020-06-24 22:32:41,814 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-06-24 22:32:41,818 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://localhost:8083
+2020-06-24 22:32:41,819 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-06-24 22:32:41,820 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-06-24 22:32:41,825 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'z-1b'                                     +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 22:32:41,843 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-06-24 22:32:41,845 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: z-1b-main
+2020-06-24 22:32:41,846 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: z-1b-main.stage1
+2020-06-24 22:32:41,847 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: z-1b-console
+2020-06-24 22:32:41,847 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: z-1b-console.stage1
+2020-06-24 22:32:41,847 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: get:/cust:z-1b-config
+2020-06-24 22:32:41,848 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: get:/cust:z-1b-config.stage1
+2020-06-24 22:32:41,848 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: post:/custall:z-1b-config
+2020-06-24 22:32:41,849 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: post:/custall:z-1b-config.stage1
+2020-06-24 22:32:41,850 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-06-24 22:32:42,100 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@2baf72d5: startup date [Wed Jun 24 22:27:16 IST 2020]; root of context hierarchy
+2020-06-24 22:32:42,106 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "z-1b" shut down normally on: 24/6/20 10:32 PM         *
+* Up for: 0 days, 0 hours, 5 mins, 24.6 sec                          *
+**********************************************************************
+2020-06-24 22:32:42,418 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'z-1b'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 22:32:42,428 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-06-24 22:32:42,433 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-06-24 22:32:42,449 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-06-24 22:32:42,450 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-06-24 22:32:42,453 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@6aa5e498: startup date [Wed Jun 24 22:32:42 IST 2020]; root of context hierarchy
+2020-06-24 22:32:42,867 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-24 22:32:43,041 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx2.log
+2020-06-24 22:32:43,042 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx2.log
+2020-06-24 22:32:43,074 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-06-24 22:32:43,077 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-main
+2020-06-24 22:32:43,077 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2020-06-24 22:32:43,078 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2020-06-24 22:32:43,078 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2020-06-24 22:32:43,081 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2020-06-24 22:32:43,086 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2020-06-24 22:32:43,104 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-main.stage1
+2020-06-24 22:32:43,108 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-console
+2020-06-24 22:32:43,108 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7c8ecd2b
+2020-06-24 22:32:43,117 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-console.stage1
+2020-06-24 22:32:43,119 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/cust:z-1b-config
+2020-06-24 22:32:43,119 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@585d9f5c
+2020-06-24 22:32:43,127 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/cust:z-1b-config.stage1
+2020-06-24 22:32:43,128 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: post:/custall:z-1b-config
+2020-06-24 22:32:43,129 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@67693d0e
+2020-06-24 22:32:43,138 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: post:/custall:z-1b-config.stage1
+2020-06-24 22:32:43,262 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2020-06-24 22:32:43,293 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 22:32:43,296 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 22:32:43,301 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'z-1b'                                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 22:32:43,307 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-06-24 22:32:43,307 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-06-24 22:32:43,332 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8083
+2020-06-24 22:32:43,342 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-06-24 22:32:43,344 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-main
+2020-06-24 22:32:43,345 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-main.stage1
+2020-06-24 22:32:43,359 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://localhost:8083/console                            *
+********************************************************************************
+2020-06-24 22:32:43,359 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-console
+2020-06-24 22:32:43,359 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-console.stage1
+2020-06-24 22:32:43,403 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/cust:z-1b-config
+2020-06-24 22:32:43,403 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/cust:z-1b-config.stage1
+2020-06-24 22:32:43,437 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: post:/custall:z-1b-config
+2020-06-24 22:32:43,437 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: post:/custall:z-1b-config.stage1
+2020-06-24 22:32:43,451 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-06-24 22:32:43,457 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: z-1b                                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-06-24 22:46:13,143 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'z-1b'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 22:46:13,151 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-06-24 22:46:13,157 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-06-24 22:46:13,176 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-06-24 22:46:13,176 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-06-24 22:46:13,179 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@175581eb: startup date [Wed Jun 24 22:46:13 IST 2020]; root of context hierarchy
+2020-06-24 22:46:13,740 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-24 22:46:14,002 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx2.log
+2020-06-24 22:46:14,004 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx2.log
+2020-06-24 22:46:14,074 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-06-24 22:46:14,077 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-main
+2020-06-24 22:46:14,077 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2020-06-24 22:46:14,077 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2020-06-24 22:46:14,077 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2020-06-24 22:46:14,078 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2020-06-24 22:46:14,078 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2020-06-24 22:46:14,087 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-main.stage1
+2020-06-24 22:46:14,088 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-console
+2020-06-24 22:46:14,088 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@acb5508
+2020-06-24 22:46:14,094 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-console.stage1
+2020-06-24 22:46:14,094 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/cust:z-1b-config
+2020-06-24 22:46:14,095 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7cca31fc
+2020-06-24 22:46:14,101 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/cust:z-1b-config.stage1
+2020-06-24 22:46:14,101 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: post:/custall:z-1b-config
+2020-06-24 22:46:14,101 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5df92089
+2020-06-24 22:46:14,107 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: post:/custall:z-1b-config.stage1
+2020-06-24 22:46:14,166 [main] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2020-06-24 22:46:14,193 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 22:46:14,193 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 22:46:14,195 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'z-1b'                                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 22:46:14,201 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-06-24 22:46:14,201 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-06-24 22:46:14,215 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8083
+2020-06-24 22:46:14,219 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-06-24 22:46:14,221 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-main
+2020-06-24 22:46:14,221 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-main.stage1
+2020-06-24 22:46:14,227 [main] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://localhost:8083/console                            *
+********************************************************************************
+2020-06-24 22:46:14,227 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-console
+2020-06-24 22:46:14,227 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-console.stage1
+2020-06-24 22:46:14,236 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/cust:z-1b-config
+2020-06-24 22:46:14,236 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/cust:z-1b-config.stage1
+2020-06-24 22:46:14,238 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: post:/custall:z-1b-config
+2020-06-24 22:46:14,238 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: post:/custall:z-1b-config.stage1
+2020-06-24 22:46:14,257 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-06-24 22:46:14,268 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: z-1b                                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-06-24 22:50:12,138 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'z-1b'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 22:50:12,151 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-06-24 22:50:12,157 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-06-24 22:50:12,172 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-06-24 22:50:12,172 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-06-24 22:50:12,175 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@175581eb: startup date [Wed Jun 24 22:50:12 IST 2020]; root of context hierarchy
+2020-06-24 22:50:12,721 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-24 22:50:13,000 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx2.log
+2020-06-24 22:50:13,004 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx2.log
+2020-06-24 22:50:13,037 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-06-24 22:50:13,039 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-main
+2020-06-24 22:50:13,039 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2020-06-24 22:50:13,039 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2020-06-24 22:50:13,039 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2020-06-24 22:50:13,039 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2020-06-24 22:50:13,040 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2020-06-24 22:50:13,069 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-main.stage1
+2020-06-24 22:50:13,072 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-console
+2020-06-24 22:50:13,072 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@acb5508
+2020-06-24 22:50:13,081 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-console.stage1
+2020-06-24 22:50:13,084 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/cust:z-1b-config
+2020-06-24 22:50:13,084 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7cca31fc
+2020-06-24 22:50:13,092 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/cust:z-1b-config.stage1
+2020-06-24 22:50:13,092 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: post:/custall:z-1b-config
+2020-06-24 22:50:13,092 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5df92089
+2020-06-24 22:50:13,105 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: post:/custall:z-1b-config.stage1
+2020-06-24 22:50:13,206 [main] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2020-06-24 22:50:13,230 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 22:50:13,230 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-24 22:50:13,234 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'z-1b'                                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-24 22:50:13,246 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-06-24 22:50:13,247 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-06-24 22:50:13,267 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8083
+2020-06-24 22:50:13,272 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-06-24 22:50:13,273 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-main
+2020-06-24 22:50:13,273 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-main.stage1
+2020-06-24 22:50:13,293 [main] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://localhost:8083/console                            *
+********************************************************************************
+2020-06-24 22:50:13,294 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-console
+2020-06-24 22:50:13,294 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-console.stage1
+2020-06-24 22:50:13,301 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/cust:z-1b-config
+2020-06-24 22:50:13,301 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/cust:z-1b-config.stage1
+2020-06-24 22:50:13,306 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: post:/custall:z-1b-config
+2020-06-24 22:50:13,306 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: post:/custall:z-1b-config.stage1
+2020-06-24 22:50:13,328 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-06-24 22:50:13,333 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: z-1b                                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-06-25 10:17:47,434 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'z-1b'                                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-25 10:17:47,434 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: z-1b-main
+2020-06-25 10:17:47,434 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: z-1b-main.stage1
+2020-06-25 10:17:47,574 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: z-1b-console
+2020-06-25 10:17:47,574 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: z-1b-console.stage1
+2020-06-25 10:17:47,777 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: get:/cust:z-1b-config
+2020-06-25 10:17:47,777 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: get:/cust:z-1b-config.stage1
+2020-06-25 10:17:47,980 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: post:/custall:z-1b-config
+2020-06-25 10:17:47,980 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: post:/custall:z-1b-config.stage1
+2020-06-25 10:17:48,184 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-06-25 10:17:48,184 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://localhost:8083
+2020-06-25 10:17:48,199 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-06-25 10:17:48,199 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-06-25 10:17:48,199 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'z-1b'                                     +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-25 10:17:48,199 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-06-25 10:17:48,199 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: z-1b-main
+2020-06-25 10:17:48,199 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: z-1b-main.stage1
+2020-06-25 10:17:48,199 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: z-1b-console
+2020-06-25 10:17:48,199 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: z-1b-console.stage1
+2020-06-25 10:17:48,199 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: get:/cust:z-1b-config
+2020-06-25 10:17:48,199 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: get:/cust:z-1b-config.stage1
+2020-06-25 10:17:48,199 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: post:/custall:z-1b-config
+2020-06-25 10:17:48,199 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: post:/custall:z-1b-config.stage1
+2020-06-25 10:17:48,215 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-06-25 10:17:48,230 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@175581eb: startup date [Wed Jun 24 22:50:12 IST 2020]; root of context hierarchy
+2020-06-25 10:17:48,230 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "z-1b" shut down normally on: 25/6/20 10:17 AM         *
+* Up for: 0 days, 11 hours, 27 mins, 34.996 sec                      *
+**********************************************************************
+2020-06-25 10:17:50,230 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'z-1b'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-25 10:17:50,245 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-06-25 10:17:50,245 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-06-25 10:17:50,261 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-06-25 10:17:50,261 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-06-25 10:17:50,261 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@5a4cfbd3: startup date [Thu Jun 25 10:17:50 IST 2020]; root of context hierarchy
+2020-06-25 10:17:50,640 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-25 10:17:50,812 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx2.log
+2020-06-25 10:17:50,812 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx2.log
+2020-06-25 10:17:50,828 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-06-25 10:17:50,828 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-main
+2020-06-25 10:17:50,828 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2020-06-25 10:17:50,828 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2020-06-25 10:17:50,828 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2020-06-25 10:17:50,828 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2020-06-25 10:17:50,828 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2020-06-25 10:17:50,828 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-main.stage1
+2020-06-25 10:17:50,828 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-console
+2020-06-25 10:17:50,828 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@81ca524
+2020-06-25 10:17:50,843 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-console.stage1
+2020-06-25 10:17:50,843 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/cust:z-1b-config
+2020-06-25 10:17:50,843 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@751553df
+2020-06-25 10:17:50,843 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/cust:z-1b-config.stage1
+2020-06-25 10:17:50,843 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: post:/custall:z-1b-config
+2020-06-25 10:17:50,843 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@707a5139
+2020-06-25 10:17:50,843 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: post:/custall:z-1b-config.stage1
+2020-06-25 10:17:50,875 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2020-06-25 10:17:50,890 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-25 10:17:50,890 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-25 10:17:50,890 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'z-1b'                                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-25 10:17:50,890 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-06-25 10:17:50,890 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-06-25 10:17:50,890 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8083
+2020-06-25 10:17:50,890 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-06-25 10:17:50,890 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-main
+2020-06-25 10:17:50,890 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-main.stage1
+2020-06-25 10:17:50,906 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://localhost:8083/console                            *
+********************************************************************************
+2020-06-25 10:17:50,906 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-console
+2020-06-25 10:17:50,906 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-console.stage1
+2020-06-25 10:17:50,906 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/cust:z-1b-config
+2020-06-25 10:17:50,906 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/cust:z-1b-config.stage1
+2020-06-25 10:17:50,906 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: post:/custall:z-1b-config
+2020-06-25 10:17:50,906 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: post:/custall:z-1b-config.stage1
+2020-06-25 10:17:50,921 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-06-25 10:17:50,921 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: z-1b                                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-06-25 10:23:52,215 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'z-1b'                                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-25 10:23:52,215 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: z-1b-main
+2020-06-25 10:23:52,215 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: z-1b-main.stage1
+2020-06-25 10:23:52,356 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: z-1b-console
+2020-06-25 10:23:52,356 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: z-1b-console.stage1
+2020-06-25 10:23:52,559 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: get:/cust:z-1b-config
+2020-06-25 10:23:52,564 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: get:/cust:z-1b-config.stage1
+2020-06-25 10:23:52,767 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: post:/custall:z-1b-config
+2020-06-25 10:23:52,767 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: post:/custall:z-1b-config.stage1
+2020-06-25 10:23:52,970 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-06-25 10:23:52,970 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://localhost:8083
+2020-06-25 10:23:52,970 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-06-25 10:23:52,970 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-06-25 10:23:52,970 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'z-1b'                                     +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-25 10:23:52,970 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-06-25 10:23:52,970 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: z-1b-main
+2020-06-25 10:23:52,970 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: z-1b-main.stage1
+2020-06-25 10:23:52,970 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: z-1b-console
+2020-06-25 10:23:52,970 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: z-1b-console.stage1
+2020-06-25 10:23:52,970 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: get:/cust:z-1b-config
+2020-06-25 10:23:52,970 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: get:/cust:z-1b-config.stage1
+2020-06-25 10:23:52,970 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: post:/custall:z-1b-config
+2020-06-25 10:23:52,970 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: post:/custall:z-1b-config.stage1
+2020-06-25 10:23:52,970 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-06-25 10:23:52,986 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@5a4cfbd3: startup date [Thu Jun 25 10:17:50 IST 2020]; root of context hierarchy
+2020-06-25 10:23:52,986 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "z-1b" shut down normally on: 25/6/20 10:23 AM         *
+* Up for: 0 days, 0 hours, 6 mins, 2.96 sec                          *
+**********************************************************************
+2020-06-25 10:23:54,095 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'z-1b'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-25 10:23:54,111 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-06-25 10:23:54,111 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-06-25 10:23:54,220 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-06-25 10:23:54,220 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-06-25 10:23:54,220 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@14ca8e73: startup date [Thu Jun 25 10:23:54 IST 2020]; root of context hierarchy
+2020-06-25 10:23:54,439 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-25 10:23:54,517 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-tx-log\tx2.log
+2020-06-25 10:23:54,517 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx1.log and D:\new-apps\.mule\.\.mule\z-1b\queue-xa-tx-log\tx2.log
+2020-06-25 10:23:54,532 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-06-25 10:23:54,532 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-main
+2020-06-25 10:23:54,532 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2020-06-25 10:23:54,532 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2020-06-25 10:23:54,532 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2020-06-25 10:23:54,532 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2020-06-25 10:23:54,532 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2020-06-25 10:23:54,532 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-main.stage1
+2020-06-25 10:23:54,532 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: z-1b-console
+2020-06-25 10:23:54,532 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1d6157c2
+2020-06-25 10:23:54,548 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: z-1b-console.stage1
+2020-06-25 10:23:54,548 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/cust:z-1b-config
+2020-06-25 10:23:54,548 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@15589fdd
+2020-06-25 10:23:54,548 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/cust:z-1b-config.stage1
+2020-06-25 10:23:54,548 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: post:/custall:z-1b-config
+2020-06-25 10:23:54,548 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@29e61e67
+2020-06-25 10:23:54,548 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: post:/custall:z-1b-config.stage1
+2020-06-25 10:23:54,579 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2020-06-25 10:23:54,626 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-25 10:23:54,626 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\new-apps\.mule\apps\z-1b\z-1b.xml'}]"
+2020-06-25 10:23:54,626 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'z-1b'                                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-25 10:23:54,626 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-06-25 10:23:54,626 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-06-25 10:23:54,642 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8083
+2020-06-25 10:23:54,642 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-06-25 10:23:54,642 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-main
+2020-06-25 10:23:54,642 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-main.stage1
+2020-06-25 10:23:54,642 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://localhost:8083/console                            *
+********************************************************************************
+2020-06-25 10:23:54,642 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: z-1b-console
+2020-06-25 10:23:54,642 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: z-1b-console.stage1
+2020-06-25 10:23:54,657 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/cust:z-1b-config
+2020-06-25 10:23:54,657 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/cust:z-1b-config.stage1
+2020-06-25 10:23:54,657 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: post:/custall:z-1b-config
+2020-06-25 10:23:54,657 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: post:/custall:z-1b-config.stage1
+2020-06-25 10:23:54,657 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-06-25 10:23:54,657 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: z-1b                                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-06-25 10:24:02,359 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'z-1b'                                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-25 10:24:02,359 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: z-1b-main
+2020-06-25 10:24:02,359 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: z-1b-main.stage1
+2020-06-25 10:24:02,453 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: z-1b-console
+2020-06-25 10:24:02,453 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: z-1b-console.stage1
+2020-06-25 10:24:02,656 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: get:/cust:z-1b-config
+2020-06-25 10:24:02,656 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: get:/cust:z-1b-config.stage1
+2020-06-25 10:24:02,859 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: post:/custall:z-1b-config
+2020-06-25 10:24:02,859 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: post:/custall:z-1b-config.stage1
+2020-06-25 10:24:03,062 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-06-25 10:24:03,062 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://localhost:8083
+2020-06-25 10:24:03,062 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-06-25 10:24:03,062 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-06-25 10:24:03,062 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'z-1b'                                     +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-25 10:24:03,062 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-06-25 10:24:03,062 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: z-1b-main
+2020-06-25 10:24:03,062 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: z-1b-main.stage1
+2020-06-25 10:24:03,062 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: z-1b-console
+2020-06-25 10:24:03,062 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: z-1b-console.stage1
+2020-06-25 10:24:03,062 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: get:/cust:z-1b-config
+2020-06-25 10:24:03,062 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: get:/cust:z-1b-config.stage1
+2020-06-25 10:24:03,062 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: post:/custall:z-1b-config
+2020-06-25 10:24:03,062 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: post:/custall:z-1b-config.stage1
+2020-06-25 10:24:03,062 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-06-25 10:24:03,078 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@14ca8e73: startup date [Thu Jun 25 10:23:54 IST 2020]; root of context hierarchy
+2020-06-25 10:24:03,078 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "z-1b" shut down normally on: 25/6/20 10:24 AM         *
+* Up for: 0 days, 0 hours, 0 mins, 8.452 sec                         *
+**********************************************************************
